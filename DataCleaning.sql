@@ -115,12 +115,12 @@ from NashvilleHousingData
 WITH RowNumCTE AS(
 select *,
 Rank() OVER (PARTITION BY PropertyAddress,
-						  ParcelID,
-						  SaleDate,
-						  SalePrice,
-						  LegalReference
-						  ORDER BY [UniqueID ])
-						  As RankNum
+			  ParcelID,
+			  SaleDate,
+			  SalePrice,
+			  LegalReference
+			  ORDER BY [UniqueID ])
+			  As RankNum
 from NashvilleHousingData)
 delete from RowNumCTE where RankNum = 2;
 

@@ -3,6 +3,7 @@ Pre-Processed Nashville Housing Data using SQL to make it ready for further anal
 
 
 Performed following tasks during cleaning:
+
 1.Removed Duplicates
 
 2.Splitted Addresses to make readable 
